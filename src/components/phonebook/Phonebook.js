@@ -11,12 +11,12 @@ export default function Phonebook() {
     //     this.setState({ [name]: value });
     // };
 
-    // handleSubmit = e => {
-    //     e.preventDefault();
-    //     const { onSubmit } = this.props;
-    //     onSubmit(this.state);
+//    const handleSubmit = e => {
+//         e.preventDefault();
+//     //     const { onSubmit } = this.props;
+    // onSubmit(name, number);
     //     this.reset();
-    // };
+    //  };
 
     // reset = () => {
     //     this.setState({ name: '', number: '' });
