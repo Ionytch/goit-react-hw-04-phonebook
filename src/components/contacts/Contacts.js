@@ -1,6 +1,6 @@
 // import { Component } from "react";
 
- function Contacts ({names, onDeleteContacts}) {
+ const Contacts= ({names, onDeleteContacts})=> {
            return (
             <ul>
                    {

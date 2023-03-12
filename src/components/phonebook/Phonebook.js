@@ -1,27 +1,7 @@
 import { useState } from "react";
 
-export default function Phonebook() {
-    // state = {
-    //     name: '',
-    //     number: '',
-    // };
-
-    // handleChange = e => {
-    //     const { name, value } = e.currentTarget;
-    //     this.setState({ [name]: value });
-    // };
-
-//    const handleSubmit = e => {
-//         e.preventDefault();
-//     //     const { onSubmit } = this.props;
-    // onSubmit(name, number);
-    //     this.reset();
-    //  };
-
-    // reset = () => {
-    //     this.setState({ name: '', number: '' });
-    // };
-
+export default function Phonebook({onSubmit}) {
+   
 
 const [name, setName]=useState('');
 const [number, setNumber]=useState('');
@@ -41,10 +21,24 @@ const [number, setNumber]=useState('');
        }
     }
     
+   const resetForm = () => {
+    setName('');
+    setNumber('');
+  };
+   
+    const handleSubmit = e => {
+        e.preventDefault();
+
+    onSubmit({name, number});
+        resetForm();
+    
+    };
+
+
 
         return (<div>
             <h2>PHONEBOOK</h2>
-            <form >
+            <form onSubmit={handleSubmit}>
                 <label for="name">
                     NAME
                 </label>
