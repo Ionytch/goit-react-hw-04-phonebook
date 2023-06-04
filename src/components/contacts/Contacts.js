@@ -1,4 +1,5 @@
-// import { Component } from "react";
+import PropTypes from "prop-types";
+
 
  const Contacts= ({names, onDeleteContacts})=> {
            return (
@@ -14,5 +15,9 @@
         )
     
 }
+Contacts.propTypes = {
+    names: PropTypes.string.isRequired,
+    onDeleteContacts: PropTypes.string.isRequired,
+};
 
 export default Contacts

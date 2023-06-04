@@ -1,4 +1,6 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
+
 
 export default function Phonebook({onSubmit}) {
    
@@ -72,6 +74,6 @@ const [number, setNumber]=useState('');
     
 }
 
-// export default Phonebook
-
-// onSubmit={this.handleSubmit}
+Phonebook.propTypes = {
+    onSubmit: PropTypes.string.isRequired,
+};

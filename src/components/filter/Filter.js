@@ -1,4 +1,7 @@
-export const Filter = ({filter, onFilter}) => {
+import PropTypes from "prop-types";
+
+
+export const Filter = ({ filter, onFilter }) => {
     return (<div>
         <h2>filter</h2>
         <form>
@@ -17,3 +20,8 @@ export const Filter = ({filter, onFilter}) => {
        
     )
 }
+
+Filter.propTypes = {
+    Filter: PropTypes.string.isRequired,
+    onFilter: PropTypes.string.isRequired,
+};
