@@ -75,5 +75,5 @@ const [number, setNumber]=useState('');
 }
 
 Phonebook.propTypes = {
-    onSubmit: PropTypes.string.isRequired,
+    onSubmit: PropTypes.func.isRequired,
 };
