@@ -17,7 +17,7 @@ useEffect(() => {
  const addContact = ({ name, number }) => {
         const newContact = { id: nanoid(), name, number };
         
-   contacts.some(contact => contact.name === name)
+   contacts.some(contact => contact.name.toLowerCase() === name.toLowerCase())
       ? alert(
           `user ${name} is already in the contact list`
               )
