@@ -16,8 +16,8 @@ import PropTypes from "prop-types";
     
 }
 Contacts.propTypes = {
-    names: PropTypes.string.isRequired,
-    onDeleteContacts: PropTypes.string.isRequired,
+    names: PropTypes.array.isRequired,
+    onDeleteContacts: PropTypes.func.isRequired,
 };
 
 export default Contacts
