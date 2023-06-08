@@ -49,7 +49,6 @@ const deleteContact = contactId => {
     return (
       <div
         style={{
-          height: '100vh',
           display: 'flex',
           flexDirection:'column',
           justifyContent: 'center',
