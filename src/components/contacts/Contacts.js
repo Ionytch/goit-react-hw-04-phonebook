@@ -16,11 +16,11 @@ import PropTypes from "prop-types";
     
 }
 Contacts.propTypes = {
-    names: PropTypes.shape({
+    names:PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         number: PropTypes.number.isRequired,
-    }),
+    }).isRequired,).isRequired,
     onDeleteContacts: PropTypes.func.isRequired,
 };
 
